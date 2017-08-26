@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Test page</title>
+	</head>
+	<body>
+		<!-- Menu -->
+		<div class="header_topline">
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="row">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header"> 
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+							<span class="sr-only">Toggle navigation</span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+							</button> 
+							<a class="navbar-brand" href="#">LOGO</a> 
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="#">ГЛАВНАЯ</a></li>
+								<li>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">КАТАЛОГ ТОВАРОВ<b class="caret"></b></a>
+									<ul class="dropdown-menu multi-level">
+										<li><a href="#">КАТЕГОРИЯ 1</a></li>
+										<li class="dropdown-submenu">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">КАТЕГОРИЯ 2</a>
+											<ul class="dropdown-menu">
+												<li><a href="#">КАТЕГОРИЯ 1</a></li>
+												<li><a href="#">КАТЕГОРИЯ 2</a></li>
+												<li><a href="#">КАТЕГОРИЯ 3</a></li>
+											</ul>
+										</li>
+										<li><a href="#">КАТЕГОРИЯ 3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">О НАШЕМ МАГАЗИНЕ</a></li>
+								<li><a href="#">ДОСТАВКА</a></li>
+								<li><a href="#">ОПЛАТА</a></li>
+								<li><a href="#">КОНТАКТЫ</a></li>
+							</ul>
+							<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="style-button">ЗАКАЗАТЬ ЗВОНОК</button>
+							<!-- Modal -->
+							<form class="form-horizontal" method="post" id="form">
+								<div id="myModal" class="modal fade">
+									<div class="modal-dialog ">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title text-center">СВЯЖИТЕСЬ С НАМИ</h4>
+												<h5 class="text-center">Свяжитесь с нашей службой поддержки клиентов, если у Вас есть какие-либо вопросы</h5>
+											</div>
+											<div class="modal-body">
+												<div class="form-group">
+													<div class="col-sm-12">
+														<input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" pattern="[a-zA-Zа-яА-ЯёЁ ]+" required>
+														<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-12">
+														<input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+														<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-12">
+														<input type="text" class="form-control" id="text" name="text" placeholder="Ваше сообщение" required>
+														<span class="glyphicon form-control-feedback blablabla" aria-hidden="true"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="accept"><input type="checkbox" id="accept"><u>Даю свое согласие на обработку персональных данных в соответсвии с пользовательским соглашением</u></label>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-6">
+														<button type="submit" id="submit" class="btn btn-primary btn-lg">Отправить</button>
+														<div></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+					</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Carousel  -->
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="container main-container">
+				<div id="carousel-example-generic" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<!-- First slide -->
+						<div class="item active first-item">
+							<div class="carousel-caption">
+								<h3 data-animation="animated bounceInLeft">
+									<strong>ЗДЕСЬ БУДЕТ ВАШ ТЕКСТ </strong>
+								</h3>
+								<h3 data-animation="animated bounceInRight" class="normal">
+									Вы можете описать преимущества Ваших услуг или товара
+								</h3>
+								<button class="btn btn-primary btn-lg button1" data-animation="animated zoomInUp">Конпка 1</button>
+								<button class="btn btn-primary btn-lg button2" data-animation="animated zoomInUp">Конпка 2</button>
+							</div>
+						</div>
+						<!-- Second slide -->
+						<div class="item second-item">
+							<div class="carousel-caption">
+								<h3 class="icon-container" data-animation="animated bounceInDown">
+									<span class="glyphicon glyphicon-heart"></span>
+								</h3>
+								<h3 data-animation="animated bounceInUp">
+									Описание слайда №2
+								</h3>
+								<button class="btn btn-primary btn-lg button1" data-animation="animated zoomInRight">Кнопка</button>
+							</div>
+						</div>
+					</div>
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Info -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-2 col-sm-4 col-xs-6">
+					<h4>Информация о компании</h4>
+					<div id="content">
+						<p>Здесь будет Ваш текст. Вы можете описать преимущества Ваших услог или товара, добавить интересную информацию для посетителей сайта.Здесь будет Ваш текст.</p>
+					</div>
+				</div>
+				<div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
+				</div>
+				<div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+					<h4>Контактная информация</h4>
+					<div id="content">
+						<i class="fa fa-phone" aria-hidden="true">&nbsp;8(800)800-00-00</i><br>	
+						<i class="fa fa-phone" aria-hidden="true">&nbsp;8(800)800-00-00</i><br>
+						<i class="fa fa-envelope" aria-hidden="true">&nbsp;mail@mail.ru</i><br>
+						<i class="fa fa-clock-o" aria-hidden="true">&nbsp;ПН-ВС: 10:00-21:00</i><br>
+						<i class="fa fa-map" aria-hidden="true">&nbsp;СПб, пр.Косыгина 31,к.1</i>
+					</div>
+				</div>
+				<div class="col-lg-2  col-md-3 col-sm-4 col-xs-6">
+					<h4> Каталог </h4>
+					<div id="content">
+						<a href="">
+							<li>Категория товаров 1</li>
+						</a>
+						<a href="">
+							<li>Категория товаров 2</li>
+						</a>
+						<a href="">
+							<li>Категория товаров 3</li>
+						</a>
+						<a href="">
+							<li>Категория товаров 4</li>
+						</a>
+						<a href="">
+							<li>Категория товаров 5</li>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+					<h4>Информация</h4>
+					<div id="content">
+						<li>Полезная информация 1</li>
+						<li>Полезная информация 2</li>
+						<li>Полезная информация 3</li>
+						<li>Полезная информация 4</li>
+						<li>Полезная информация 5</li>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer  -->
+		<footer>
+			<div class="container">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 left">
+							<p>&copy;Магазин 2017. Все права защищены.</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 rightside ">
+							<span class="fa-stack fa-lg blur">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							</span>
+							<span class="fa-stack fa-lg blur">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+							</span>
+							<span class="fa-stack fa-lg blur">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+							</span>
+							<p class="right">Разработано в <strong>РОССАЙТ</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/validator.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
+
+
+
